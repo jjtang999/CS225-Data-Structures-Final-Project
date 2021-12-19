@@ -1,8 +1,6 @@
 # Twitch User Social Graph
 Using the Twitch User Social graph program, you can run a BFS Traversal, Dijkstra's Shortest Path Algorithm, and the Betweenness Centrality to determine the shortest path amongst Twitch users in the United States, as well as the user with the most mutual followings on the Twitch platform.
 
-Final Project Video URL: https://drive.google.com/file/d/1UNn6vkueHBz93MTrEOBx-Jmvj4vZhCx8/view?usp=sharing
-
 
 # Building Files
 This project will urn most efficiently on the University of Illinois at Urbana Champaign's EWS machine. When working on EWS, you must execute the following commands:
