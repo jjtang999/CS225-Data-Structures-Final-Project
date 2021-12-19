@@ -1,0 +1,15 @@
+# Development Logs
+## Week of 11/08/21:
+The team's initial proposal consisted of using a dataset of Twitch users to find the degrees of separation from one user to another user based on the shortest mutual following path, and finding the most central/connected user. We determined that the BFS, Dijkstra's, and betweenness centrality algorithms would be the most insightful implementations given our data set. Our team proposal was submitted and approved, after the following changes: adding weights to each node to create a distinction between BFS and Dijkstra's algorithm. Additionally, we wrote and committed our team contract which held the group's protocol as agreed upon by each member.
+
+## Week of 11/15/21: 
+We distributed general tasks to each group member, where Tom was assigned the implementation of our graph structure, Ishika was assigned Dijkstra's algorithm, Justin was assigned the parsing of our data from a CSV file to the data structures of our graph constructor, and Venya was assigned to create test cases. The group wrote out the pseudocode for the graph structure and finalized the private member variables and member functions to be implemented. The graph class was then created in `graph/include/core/graph.h`. The graph constructor, destructor, getters, public `areAdjacent` function, private `_isShareEdge` function, and public `_getDistance` function were implemented in `graph/src/core/graph.hpp`. Test cases for the graph constructor and public functions were also created.
+
+## Week of 11/22/21: 
+The team created the project files necessary to compile, make, and run the program. The MakeFile was created and adjusted to the file paths within the project. Test cases were readjusted based on changes in our graph class, and more test cases regarding traversals were added. 
+
+## Week of 11/29/21:
+We began our code for Dijkstra's algorithm using a priority queue. We debugged the graph class based on compilation errors with the code that ran from our functioning make file. We renamed and changed the return variables of certain the `_getDistance` and `findShortestPath` functions, respectively. We implemented BFS traversal through a queue data structure. The team added test cases to `test_graph.cpp` to verify the functionality of our BFS algorithm. Our test cases were also running into bugs and segmentation faults, which were resolved through correctly initializing variables for the graph constructor. Parsing the dataset was also discussed and organized to be implemented within the project.
+
+## Week of 12/06/21:
+We completed our parsing algorithm in 'DataParser.cpp', and created tests to validate the accuracy of our conversion of '.txt' files to the format our graph needs. We continued working on testing edge cases for Dijkstra's and betweennessCentrality. Additionally, we began drafting our presentation for our video and plan on creating our 'main.cpp' file containing our parsed twitch user data, and running our algorithms on it.
