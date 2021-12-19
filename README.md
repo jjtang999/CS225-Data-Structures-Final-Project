@@ -3,7 +3,7 @@ Using the Twitch User Social graph program, you can run a BFS Traversal, Dijkstr
 
 
 # Building Files
-This project will urn most efficiently on the University of Illinois at Urbana Champaign's EWS machine. When working on EWS, you must execute the following commands:
+This project will run most efficiently on the University of Illinois at Urbana Champaign's EWS machine. When working on EWS, you must execute the following commands:
 ```
 module load llvm/6.0.1
 make
